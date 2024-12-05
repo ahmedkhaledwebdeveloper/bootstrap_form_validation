@@ -1,0 +1,19 @@
+
+
+h1{
+    margin: 0 auto;
+  	width: 100%;
+  	text-align: center;
+  	font-family: sans-serif;
+  	font-style: italic;
+  	font-size: 40px;
+  	font-weight: bold;
+    color: whitesmoke;
+    background-color: blue;
+}
+
+.container{
+    padding: 30px;
+}
+
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="title" content="form_validation">
+  <meta name="description" content="lorem">
+  <meta name="keywords" content="html, css">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="3 days">
+  <meta name="author" content="Ahmed_Khaled">
+
+
+  <!-- favicon -->
+  <link rel="icon" type="image/jpg" href="img/bt5.3.png">
+
+  <!-- css link-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <title>BT5 form & validation</title>
+
+</head>
+
+
+<body>
+
+  <div> <h1>Personal Data Form</h1> </div>
+
+  <div class="container">
+
+    <form>
+
+      <div class="mb-3">
+        <label for="email1" class="form-label">Email address</label>
+        <input type="email" class="form-control-sm email1" id="email1" name="email1" required>
+        <div id="emailHelp" class="form-text">We'll never share your email.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="password1" class="form-label">Password</label>
+        <input type="password" class="form-control-sm password1" id="password1" name="password1" required>
+        <div id="emailHelp" class="form-text">Your password will be protected.</div>
+        </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="check1" name="check1">
+        <label class="form-check-label check1" for="check1">Check me out</label>
+      </div>
+
+      <input type="submit" value="Submit" class="btn btn-danger">
+
+    </form>
+
+
+    <!-- form -->
+    <form class="row g-3 needs-validation" novalidate>
+
+
+    <!-- first name -->
+      <div class="col-md-6">
+
+        <label for="f_name" class="form-label">First name</label>
+        <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter Your First Name" required>
+      <div class="valid-feedback">
+          Looks good!
+      </div>
+      <div class="invalid-feedback">
+          Enter Your First Name
+      </div>
+
+      </div>
+
+
+    <!-- last name -->
+      <div class="col-md-6">
+
+        <label for="l_name" class="form-label">Last name</label>
+        <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter Your Last Name" required>
+      <div class="valid-feedback">
+          Looks good!
+      </div>
+      <div class="invalid-feedback">
+          Enter Your Last Name
+      </div>
+      </div>
+
+
+    <!-- email address -->
+      <div class="col-md-6">
+
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control email" id="email" name="email" placeholder="Enter Your Email Address" required>
+        <div class="valid-feedback">
+          Looks good!
+      </div>
+      <div class="invalid-feedback">
+          Enter Your Email Address
+      </div>
+      </div>
+
+
+    <!-- contact number -->
+      <div class="col-md-6">
+
+        <label for="c_n" class="form-label">Contact Number</label>
+        <input type="text" class="form-control c_n" id="c_n" name="c_n" placeholder="Enter Your Contact Number" required>
+        <div class="valid-feedback">
+          Looks good!
+      </div>
+      <div class="invalid-feedback">
+          Enter Your Contact Number
+      </div>
+      </div>
+
+
+    <!-- city -->
+      <div class="col-md-3">
+        <label for="city" class="form-label">City</label>
+        <input type="text" class="form-control city" id="city" name="city" placeholder="Enter Your City" required>
+      <div class="invalid-feedback">
+          Enter Your City
+      </div>
+      </div>
+
+
+    <!-- state -->
+      <div class="col-md-3">
+        <label for="state" class="form-label">State</label>
+        <select class="form-select state" id="state" name="state" placeholder="Enter Your State" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+        </select>
+      <div class="invalid-feedback">
+           Enter Your State
+      </div>
+      </div>
+
+
+    <!-- zip -->
+      <div class="col-md-3">
+        <label for="zip" class="form-label">Zip</label>
+        <input type="text" class="form-control zip" id="zip" name="zip" placeholder="Enter Your Zip Code" required>
+      <div class="invalid-feedback">
+         Enter Your Zip Code
+      </div>
+      </div>
+
+
+    <!-- from file -->
+      <div class="mb-3">
+       <label for="formFile" class="form-label">Default file input example</label>
+       <input class="form-control" type="file" id="formFile">
+      </div>
+
+
+    <!-- Agree to terms and conditions -->
+      <div class="col-12">
+      <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+       <label class="form-check-label" for="invalidCheck">
+         Agree to terms and conditions
+       </label>
+      <div class="invalid-feedback">
+         You must agree before submitting.
+      </div>
+      </div>
+      </div>
+
+
+    <!-- submit form -->
+      <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+
+    </form>
+
+  </div> 
+
+
+  <!-- script link-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+
+</html>
+
